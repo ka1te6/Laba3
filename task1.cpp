@@ -11,7 +11,7 @@ int main() {
 
     int array[ARRAY_SIZE];
    
-    std::cout << "Èñõîäíûé ìàññèâ: ";
+    std::cout << "Ð˜ÑÑ…Ð¾Ð´Ð½Ñ‹Ð¹ Ð¼Ð°ÑÑÐ¸Ð²: ";
     for (int i = 0; i < ARRAY_SIZE; ++i) {
         array[i] = rand() % 100;
         std::cout << array[i] << " ";
@@ -24,7 +24,7 @@ int main() {
     }
     double average = static_cast<double>(sum) / ARRAY_SIZE;
 
-    std::cout << "Ñðåäíåå àðèôìåòè÷åñêîå: " << average << std::endl;
+    std::cout << "Ð¡Ñ€ÐµÐ´Ð½ÐµÐµ Ð°Ñ€Ð¸Ñ„Ð¼ÐµÑ‚Ð¸Ñ‡ÐµÑÐºÐ¾Ðµ: " << average << std::endl;
 
     return 0;
 }

@@ -8,17 +8,17 @@ int main() {
 
     srand(static_cast<unsigned>(time(0)));
     int size;
-    std::cout << "Ââåäèòå ðàçìåð ìàññèâà: ";
+    std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ€Ð°Ð·Ð¼ÐµÑ€ Ð¼Ð°ÑÑÐ¸Ð²Ð°: ";
     std::cin >> size;
 
     if (size <= 0) {
-        std::cout << "Íåêîððåêòíûé ðàçìåð ìàññèâà" << std::endl;
+        std::cout << "ÐÐµÐºÐ¾Ñ€Ñ€ÐµÐºÑ‚Ð½Ñ‹Ð¹ Ñ€Ð°Ð·Ð¼ÐµÑ€ Ð¼Ð°ÑÑÐ¸Ð²Ð°" << std::endl;
         return 1;
     }
 
     int* array = new int[size];
 
-    std::cout << "Èñõîäíûé ìàññèâ: ";
+    std::cout << "Ð˜ÑÑ…Ð¾Ð´Ð½Ñ‹Ð¹ Ð¼Ð°ÑÑÐ¸Ð²: ";
     for (int i = 0; i < size; ++i) {
         array[i] = rand() % 100;
         std::cout << array[i] << " ";
@@ -31,7 +31,7 @@ int main() {
     }
     double average = static_cast<double>(sum) / size;
 
-    std::cout << "Ñðåäíåå àðèôìåòè÷åñêîå: " << average << std::endl;
+    std::cout << "Ð¡Ñ€ÐµÐ´Ð½ÐµÐµ Ð°Ñ€Ð¸Ñ„Ð¼ÐµÑ‚Ð¸Ñ‡ÐµÑÐºÐ¾Ðµ: " << average << std::endl;
 
     delete[] array;
 

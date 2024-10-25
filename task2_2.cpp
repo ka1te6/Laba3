@@ -9,18 +9,18 @@ int main() {
     srand(static_cast<unsigned>(time(0)));
 
     int n, m, l;
-    std::cout << "Ââåäèòå êîëè÷åñòâî ñòðîê ïåðâîé ìàòðèöû (n): ";
+    std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÑ‚Ñ€Ð¾Ðº Ð¿ÐµÑ€Ð²Ð¾Ð¹ Ð¼Ð°Ñ‚Ñ€Ð¸Ñ†Ñ‹ (n): ";
     std::cin >> n;
-    std::cout << "Ââåäèòå êîëè÷åñòâî ñòîëáöîâ ïåðâîé ìàòðèöû (è ñòðîê âòîðîé ìàòðèöû) (m): ";
+    std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÑ‚Ð¾Ð»Ð±Ñ†Ð¾Ð² Ð¿ÐµÑ€Ð²Ð¾Ð¹ Ð¼Ð°Ñ‚Ñ€Ð¸Ñ†Ñ‹ (Ð¸ ÑÑ‚Ñ€Ð¾Ðº Ð²Ñ‚Ð¾Ñ€Ð¾Ð¹ Ð¼Ð°Ñ‚Ñ€Ð¸Ñ†Ñ‹) (m): ";
     std::cin >> m;
-    std::cout << "Ââåäèòå êîëè÷åñòâî ñòîëáöîâ âòîðîé ìàòðèöû (l): ";
+    std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÑ‚Ð¾Ð»Ð±Ñ†Ð¾Ð² Ð²Ñ‚Ð¾Ñ€Ð¾Ð¹ Ð¼Ð°Ñ‚Ñ€Ð¸Ñ†Ñ‹ (l): ";
     std::cin >> l;
 
     std::vector<std::vector<int>> A(n, std::vector<int>(m));
     std::vector<std::vector<int>> B(m, std::vector<int>(l));
     std::vector<std::vector<int>> C(n, std::vector<int>(l, 0));
 
-    std::cout << "Ìàòðèöà A:\n";
+    std::cout << "ÐœÐ°Ñ‚Ñ€Ð¸Ñ†Ð° A:\n";
     for (int i = 0; i < n; ++i) {
         for (int j = 0; j < m; ++j) {
             A[i][j] = rand() % 10;
@@ -29,7 +29,7 @@ int main() {
         std::cout << std::endl;
     }
 
-    std::cout << "Ìàòðèöà B:\n";
+    std::cout << "ÐœÐ°Ñ‚Ñ€Ð¸Ñ†Ð° B:\n";
     for (int i = 0; i < m; ++i) {
         for (int j = 0; j < l; ++j) {
             B[i][j] = rand() % 10;
@@ -46,7 +46,7 @@ int main() {
         }
     }
 
-    std::cout << "Ðåçóëüòàò ïðîèçâåäåíèÿ ìàòðèö A è B (ìàòðèöà C):\n";
+    std::cout << "Ð ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚ Ð¿Ñ€Ð¾Ð¸Ð·Ð²ÐµÐ´ÐµÐ½Ð¸Ñ Ð¼Ð°Ñ‚Ñ€Ð¸Ñ† A Ð¸ B (Ð¼Ð°Ñ‚Ñ€Ð¸Ñ†Ð° C):\n";
     for (int i = 0; i < n; ++i) {
         for (int j = 0; j < l; ++j) {
             std::cout << C[i][j] << " ";
@@ -56,3 +56,4 @@ int main() {
 
     return 0;
 }
+
